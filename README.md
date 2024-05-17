@@ -127,25 +127,44 @@ out.release()
 # Destroy all windows
 cv2.destroyAllWindows()
 
-ode Explanation:
+code Explanation:
 
 The code first imports the required packages: PyAutoGUI, cv2, and numpy.
+
 The next line specifies the resolution of the video recording: (1920, 1080).
+
 Next, we specify the video codec to be used: XVID.
+
 We then create a VideoWriter object named out and set its properties as follows: filename, codec, fps (frames per second), resolution.
+
 We then create an Empty window named Live and resize it to have a width of 480 pixels and a height of 270 pixels.
+
 We also make sure that it is displayed in front of all other windows on the computer screen.
+
 We keep this window open while we run the rest of the code.
+
 Next we use PyAutoGUI to take a screenshot using img as input.
+
 The output image frame is stored in frame variable.
+
 The image is converted from BGR format to RGB format before being written to out using write().
+
 If you want to see what’s happening inside pyautogui while taking screenshots, you can enable debug mode by setting DEBUG = True in pyautogui configuration file like so: DEBUG = True .
+
 Then when you press F5 key or run python main_program.py -d ,
+
 The code imports the required packages and sets up some basic parameters.
+
 The resolution parameter specifies the width and height of the output file, while the codec parameter specifies the video codec to be used.
+
 The next step is to create an instance of the VideoWriter class.
+
 This object will take care of writing the recorded video to an output file.
+
 The fps parameter specifies how often the video should be recorded at, while the filename and resolution parameters specify where and in what format the recording should be saved.
+
 Once everything is set up, we can start recording by issuing a call to out.write().
+
 This method takes as input a numpy array representing the current frame of video footage.
+
 Once written to disk, we can stop recording by pressing ‘q’.
